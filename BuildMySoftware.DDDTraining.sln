@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Web", "BuildMySoftware.DDDTraining.Web\BuildMySoftware.DDDTraining.Web.csproj", "{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.Domain", "BuildMySoftware.DDDTraining.Bike.Domain\BuildMySoftware.DDDTraining.Bike.Domain.csproj", "{4C37F5FC-7F6A-4D26-8085-40D04DE57353}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.Domain.Tests", "BuildMySoftware.DDDTraining.Bike.Domain.Tests\BuildMySoftware.DDDTraining.Bike.Domain.Tests.csproj", "{38C3614D-82CA-489F-AC04-756469024758}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C37F5FC-7F6A-4D26-8085-40D04DE57353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C37F5FC-7F6A-4D26-8085-40D04DE57353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C37F5FC-7F6A-4D26-8085-40D04DE57353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C37F5FC-7F6A-4D26-8085-40D04DE57353}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38C3614D-82CA-489F-AC04-756469024758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38C3614D-82CA-489F-AC04-756469024758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38C3614D-82CA-489F-AC04-756469024758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38C3614D-82CA-489F-AC04-756469024758}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

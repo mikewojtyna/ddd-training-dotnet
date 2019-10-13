@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <AssemblyName>BuildMySoftware.DDDTraining.Bike.Domain</AssemblyName>
+        <RootNamespace>BuildMySoftware.DDDTraining.Bike</RootNamespace>
+    </PropertyGroup>
+
+</Project>
