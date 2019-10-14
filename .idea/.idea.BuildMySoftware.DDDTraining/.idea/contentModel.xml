@@ -44,6 +44,57 @@
           </e>
         </e>
       </e>
+      <e p="BuildMySoftware.DDDTraining.CertIT.Domain" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.CertIT.Domain.csproj" t="IncludeRecursive" />
+        <e p="Description" t="Include">
+          <e p="initial-draft" t="Include">
+            <e p="description.txt" t="Include" />
+            <e p="domains" t="Include">
+              <e p="certificate-management" t="Include">
+                <e p="description.txt" t="Include" />
+                <e p="features" t="Include">
+                  <e p="certificate-issuing.txt" t="Include" />
+                  <e p="certificate-renewal.txt" t="Include" />
+                  <e p="certificate-request.txt" t="Include" />
+                  <e p="exam-management.txt" t="Include" />
+                </e>
+              </e>
+              <e p="consulting-and-trainings" t="Include">
+                <e p="description.txt" t="Include" />
+                <e p="features" t="Include">
+                  <e p="services-catalogue.txt" t="Include" />
+                </e>
+              </e>
+            </e>
+            <e p="domains.png" t="Include" />
+          </e>
+          <e p="workshop" t="Include">
+            <e p="certit-event-storming-0.jpg" t="Include" />
+            <e p="certit-event-storming-final.jpg" t="Include" />
+            <e p="description.md" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.CertIT.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.CertIT.Domain.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.CertIT.Domain.Tests.csproj" t="IncludeRecursive" />
+        <e p="UnitTest1.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.CertIT.Domain.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="BuildMySoftware.DDDTraining.Web" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Web.csproj" t="IncludeRecursive" />
         <e p="Controllers" t="Include">
