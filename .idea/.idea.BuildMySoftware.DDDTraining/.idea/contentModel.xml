@@ -12,12 +12,7 @@
     <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.13.0/build/netcoreapp1.0/nunit.engine.netstandard.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BuildMySoftware.DDDTraining.Bike.Domain" t="IncludeRecursive">
-        <e p="BikeId.cs" t="Include" />
-        <e p="BikeRack.cs" t="Include" />
-        <e p="BikeRent.cs" t="Include" />
-        <e p="BikeRentFailedException.cs" t="Include" />
         <e p="BuildMySoftware.DDDTraining.Bike.Domain.csproj" t="IncludeRecursive" />
-        <e p="Client.cs" t="Include" />
         <e p="Description" t="Include">
           <e p="bike-rental-event-storming-0.jpg" t="Include" />
           <e p="description.txt" t="Include" />
@@ -33,7 +28,6 @@
         </e>
       </e>
       <e p="BuildMySoftware.DDDTraining.Bike.Domain.Tests" t="IncludeRecursive">
-        <e p="BikeTests.cs" t="Include" />
         <e p="BuildMySoftware.DDDTraining.Bike.Domain.Tests.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
