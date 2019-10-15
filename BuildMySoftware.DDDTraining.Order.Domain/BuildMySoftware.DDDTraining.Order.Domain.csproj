@@ -2,8 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.0</TargetFramework>
-        <AssemblyName>BuildMySoftware.DDDTraining.Bike.Domain</AssemblyName>
-        <RootNamespace>BuildMySoftware.DDDTraining.Bike</RootNamespace>
+        <RootNamespace>BuildMySoftware.DDDTraining.Order</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>

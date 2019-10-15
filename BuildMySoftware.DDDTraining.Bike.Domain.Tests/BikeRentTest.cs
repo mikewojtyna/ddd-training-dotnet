@@ -1,3 +1,4 @@
+using BuildMySoftware.DDDTraining.SharedKernel;
 using NFluent;
 using NUnit.Framework;
 

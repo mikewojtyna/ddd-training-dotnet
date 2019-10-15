@@ -1,3 +1,5 @@
+using BuildMySoftware.DDDTraining.SharedKernel;
+
 namespace BuildMySoftware.DDDTraining.Bike
 {
     public class Client
