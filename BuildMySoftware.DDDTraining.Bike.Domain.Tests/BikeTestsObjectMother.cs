@@ -1,4 +1,4 @@
-namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
+namespace BuildMySoftware.DDDTraining.Bike.Tests
 {
     public class BikeTestsObjectMother
     {

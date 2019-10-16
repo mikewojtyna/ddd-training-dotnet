@@ -1,7 +1,7 @@
 using NFluent;
 using NUnit.Framework;
 
-namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
+namespace BuildMySoftware.DDDTraining.Bike.Tests
 {
     public class ReturnBikeTest
     {
