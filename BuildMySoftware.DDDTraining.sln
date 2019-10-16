@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Web", "BuildMySoftware.DDDTraining.Web\BuildMySoftware.DDDTraining.Web.csproj", "{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}"
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29409.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Web", "BuildMySoftware.DDDTraining.Web\BuildMySoftware.DDDTraining.Web.csproj", "{47AC6AB2-1C44-46E4-A2DB-0B7D163B643D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.Domain", "BuildMySoftware.DDDTraining.Bike.Domain\BuildMySoftware.DDDTraining.Bike.Domain.csproj", "{4C37F5FC-7F6A-4D26-8085-40D04DE57353}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Bike.Domain", "BuildMySoftware.DDDTraining.Bike.Domain\BuildMySoftware.DDDTraining.Bike.Domain.csproj", "{4C37F5FC-7F6A-4D26-8085-40D04DE57353}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.Domain.Tests", "BuildMySoftware.DDDTraining.Bike.Domain.Tests\BuildMySoftware.DDDTraining.Bike.Domain.Tests.csproj", "{38C3614D-82CA-489F-AC04-756469024758}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Bike.Domain.Tests", "BuildMySoftware.DDDTraining.Bike.Domain.Tests\BuildMySoftware.DDDTraining.Bike.Domain.Tests.csproj", "{38C3614D-82CA-489F-AC04-756469024758}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.CertIT.Domain", "BuildMySoftware.DDDTraining.CertIT.Domain\BuildMySoftware.DDDTraining.CertIT.Domain.csproj", "{4D85C635-1413-4AB7-834F-2BB426E25EF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.CertIT.Domain", "BuildMySoftware.DDDTraining.CertIT.Domain\BuildMySoftware.DDDTraining.CertIT.Domain.csproj", "{4D85C635-1413-4AB7-834F-2BB426E25EF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.CertIT.Domain.Tests", "BuildMySoftware.DDDTraining.CertIT.Domain.Tests\BuildMySoftware.DDDTraining.CertIT.Domain.Tests.csproj", "{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.CertIT.Domain.Tests", "BuildMySoftware.DDDTraining.CertIT.Domain.Tests\BuildMySoftware.DDDTraining.CertIT.Domain.Tests.csproj", "{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Tests", "BuildMySoftware.DDDTraining.Order.Tests\BuildMySoftware.DDDTraining.Order.Tests.csproj", "{911E60F1-F764-4900-B260-3B495ABEF085}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,15 @@ Global
 		{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{911E60F1-F764-4900-B260-3B495ABEF085}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{911E60F1-F764-4900-B260-3B495ABEF085}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{911E60F1-F764-4900-B260-3B495ABEF085}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{911E60F1-F764-4900-B260-3B495ABEF085}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ACE8E924-3B1B-4C56-B7CA-DAA3A395E1AC}
 	EndGlobalSection
 EndGlobal
