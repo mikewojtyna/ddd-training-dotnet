@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace BuildMySoftware.DDDTraining.Order.Tests
+﻿namespace BuildMySoftware.DDDTraining.Order
 {
-    internal class OrderLimit
+    public class OrderLimit
     {
         private Money Limit { get; set; }
         private bool IsLimited { get; set; }

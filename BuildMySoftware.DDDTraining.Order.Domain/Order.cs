@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
-namespace BuildMySoftware.DDDTraining.Order.Tests
+namespace BuildMySoftware.DDDTraining.Order
 {
-    class Order
+    public class Order
     {
 
         private List<OrderItem> Items { get; set; } = new List<OrderItem>();
@@ -13,7 +11,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 
         private OrderLimit OrderLimit { get; set; }
 
-        internal Money CalculateTotalCost()
+        public Money CalculateTotalCost()
         {
             return TotalOrderValue;
         }
@@ -37,7 +35,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
             OrderLimit = limit;
         }
 
-        internal void AddNewProduct(Product newProduct)
+        public void AddNewProduct(Product newProduct)
         {
             var item = Items.FirstOrDefault(x => x.Equals(newProduct));
             if (item == null) Items.Add(new OrderItem(1, newProduct));

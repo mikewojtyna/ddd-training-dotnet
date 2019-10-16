@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace BuildMySoftware.DDDTraining.Order.Tests
+namespace BuildMySoftware.DDDTraining.Order
 {
-    internal class Product
+    public class Product
     {
         public ProductId Id { get; set; }
         public Money UnitPrice { get; private set; }

@@ -1,4 +1,4 @@
-﻿namespace BuildMySoftware.DDDTraining.Order.Tests
+﻿namespace BuildMySoftware.DDDTraining.Order
 {
     internal class OrderItem
     {

@@ -12,6 +12,9 @@
     <e p="$USER_HOME$/.nuget/packages/nunit3testadapter/3.13.0/build/netcoreapp1.0/nunit.engine.netstandard.dll" t="Include" />
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BuildMySoftware.DDDTraining.Bike.Domain" t="IncludeRecursive">
+        <e p="Bike.cs" t="Include" />
+        <e p="BikeBroken.cs" t="Include" />
+        <e p="BikeId.cs" t="Include" />
         <e p="BikeRack.cs" t="Include" />
         <e p="BikeRent.cs" t="Include" />
         <e p="BikeRentResult.cs" t="Include" />
@@ -24,6 +27,8 @@
           <e p="events.txt" t="Include" />
         </e>
         <e p="Money.cs" t="Include" />
+        <e p="RentLimitExceeded.cs" t="Include" />
+        <e p="TriedToRentInvalidBike.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -94,6 +99,36 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="BuildMySoftware.DDDTraining.CertIT.Domain.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
+        <e p="Money.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
+        <e p="OrderItem.cs" t="Include" />
+        <e p="OrderLimit.cs" t="Include" />
+        <e p="OrderMaxTotalCostExceeded.cs" t="Include" />
+        <e p="Product.cs" t="Include" />
+        <e p="ProductId.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Domain.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj" t="IncludeRecursive" />
+        <e p="OrderTests.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Domain.Tests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

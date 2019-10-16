@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.CertIT.Domain.Tests", "BuildMySoftware.DDDTraining.CertIT.Domain.Tests\BuildMySoftware.DDDTraining.CertIT.Domain.Tests.csproj", "{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Tests", "BuildMySoftware.DDDTraining.Order.Tests\BuildMySoftware.DDDTraining.Order.Tests.csproj", "{911E60F1-F764-4900-B260-3B495ABEF085}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain.Tests", "BuildMySoftware.DDDTraining.Order.Domain.Tests\BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj", "{911E60F1-F764-4900-B260-3B495ABEF085}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain", "BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj", "{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{911E60F1-F764-4900-B260-3B495ABEF085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{911E60F1-F764-4900-B260-3B495ABEF085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{911E60F1-F764-4900-B260-3B495ABEF085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BuildMySoftware.DDDTraining.Order.Tests
+namespace BuildMySoftware.DDDTraining.Order
 {
     public class ProductId
     {

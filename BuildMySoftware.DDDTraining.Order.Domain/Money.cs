@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace BuildMySoftware.DDDTraining.Order.Tests
+namespace BuildMySoftware.DDDTraining.Order
 {
-    internal class Money
+    public class Money
     {
         public decimal Amount { get; private set; }
         public CurrencyUnit Unit { get; private set; }
@@ -64,7 +64,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
         }
     }
 
-    enum CurrencyUnit
+    public enum CurrencyUnit
     {
         USD,
         ANY

@@ -4,6 +4,10 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
 
     <IsPackable>false</IsPackable>
+
+    <AssemblyName>BuildMySoftware.DDDTraining.Order.Domain.Tests</AssemblyName>
+
+    <RootNamespace>BuildMySoftware.DDDTraining.Order</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +15,10 @@
     <PackageReference Include="nunit" Version="3.12.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.13.0" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,10 +1,8 @@
-﻿using NFluent;
+﻿using System;
+using NFluent;
 using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace BuildMySoftware.DDDTraining.Order.Tests
+namespace BuildMySoftware.DDDTraining.Order
 {
     class OrderTests
     {
