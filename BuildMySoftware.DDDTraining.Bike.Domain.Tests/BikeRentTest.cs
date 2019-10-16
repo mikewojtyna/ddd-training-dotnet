@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using NFluent;
 using NUnit.Framework;
 
@@ -9,11 +11,13 @@ namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
         public void Given_RackWithSingleBike_When_RentABike_ThenBikeIsRent()
         {
             // given
-            BikeRack rack = BikeTestsObjectMother.BikeRackWithSingleBike();
+            Bike bike = NonBrokenBike();
+            BikeRack rack = BikeTestsObjectMother.BikeRackWithSingleBike(bike);
             Client client = ClientWithSufficientFunds();
 
+
             // when
-            BikeRentResult result = rack.RentBikeBy(client);
+            BikeRentResult result = rack.RentBikeBy(client, bike.Id);
 
             // then
             Check.That(result.BikeRent).IsNotNull();
@@ -30,9 +34,9 @@ namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
             // given
             BikeRack bikeRack = EmptyBikeRack();
             Client client = ClientWithSufficientFunds();
-
+            Bike bike = NonBrokenBike();
             // when
-            BikeRentResult result = bikeRack.RentBikeBy(client);
+            BikeRentResult result = bikeRack.RentBikeBy(client, bike.Id);
 
             // then
             Check.That(result.BikeRent).IsNull();
@@ -42,11 +46,13 @@ namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
         public void Given_RackWithAtLeastOneBike_When_RentABikeByClientWithAtLeast10Pln_ThenBikeIsRent()
         {
             // given
-            BikeRack bikeRack = BikeRackWithAtLeastSingleBike();
+            Bike bike = NonBrokenBike();
+            BikeRack bikeRack = BikeTestsObjectMother.BikeRackWithSingleBike(bike);
             Client client = ClientWith(PlnOf(10.00m));
 
+
             // when
-            var bikeRentResult = bikeRack.RentBikeBy(client);
+            var bikeRentResult = bikeRack.RentBikeBy(client, bike.Id);
 
             // then
             Check.That(bikeRentResult.BikeRent).IsNotNull();
@@ -58,12 +64,66 @@ namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
             // given
             BikeRack bikeRack = BikeRackWithAtLeastSingleBike();
             Client client = ClientWith(PlnOf(9.00m));
+            Bike bike = NonBrokenBike();
 
             // when
-            var result = bikeRack.RentBikeBy(client);
+            var result = bikeRack.RentBikeBy(client, bike.Id);
 
             // then
             Check.That(result.BikeRent).IsNull();
+        }
+
+        private Bike NonBrokenBike()
+        {
+            return new Bike();
+        }
+
+        [Test]
+        public void Given_RackWithAtLeastOneBike_When_RentedBikeIsBroken_ThenBikeRentFails()
+        {
+            // given
+            Bike brokenBike = BrokenBike();
+            BikeRack bikeRack = BikeWithBrokenSingleBike(brokenBike);
+            Client client = ClientWithSufficientFunds();
+
+            // when
+            var result = bikeRack.RentBikeBy(client, brokenBike.Id);
+            // then
+            Check.That(result.BikeRent).IsNull();
+            Check.That(result.BikeBroken).IsNotNull();
+
+        }
+
+        [Test]
+        public void Given_InvalidBikeId_ThenBikeRentFails()
+        {
+            // given
+            var invalidId = AnyBikeId();
+            Bike bike = NonBrokenBike();
+            Client client = ClientWithSufficientFunds();
+            BikeRack bikeRack = BikeTestsObjectMother.BikeRackWithSingleBike(bike);
+            //when
+
+            var result = bikeRack.RentBikeBy(client, invalidId);
+            //then
+            Check.That(result.TriedToRentInvalidBike).IsNotNull();
+        }
+        private BikeId AnyBikeId()
+        {
+            return new BikeId();
+        }
+        private Bike BrokenBike()
+        {
+            return new Bike()
+            {
+                IsBroken = true
+            };
+        }
+
+        private BikeRack BikeWithBrokenSingleBike(Bike bike)
+        {
+            return BikeRack.WithBikes(bike);
+
         }
 
         private Client ClientWith(Money money)

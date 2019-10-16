@@ -11,5 +11,9 @@ namespace BuildMySoftware.DDDTraining.Bike.Domain.Tests
         {
             return BikeRack.WithSingleBike();
         }
+        public static BikeRack BikeRackWithSingleBike(Bike bike)
+        {
+            return BikeRack.WithSingleBike(bike);
+        }
     }
 }
