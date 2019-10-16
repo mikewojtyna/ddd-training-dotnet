@@ -11,9 +11,16 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
         private List<OrderItem> Items { get; set; } = new List<OrderItem>();
         private Money TotalOrderValue { get; set; } = Money.Zero();
 
+        private OrderLimit OrderLimit { get; set; }
+
         internal Money CalculateTotalCost()
         {
             return TotalOrderValue;
+        }
+
+        public Order()
+        {
+            OrderLimit = OrderLimit.Unlimited();
         }
 
         public static Order WithProducts(params Product[] products)
@@ -23,6 +30,11 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
             foreach (var p in products)
                 order.AddNewProduct(p);
             return order;
+        }
+
+        public Order(OrderLimit limit)
+        {
+            OrderLimit = limit;
         }
 
         internal void AddNewProduct(Product newProduct)
@@ -35,7 +47,9 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 
         private Money Recalculate()
         {
-            return Items.Select(x => x.Cost()).Aggregate((x, y) => x.Add(y));
+            var totalCost =  Items.Select(x => x.Cost()).Aggregate((x, y) => x.Add(y));
+            if (OrderLimit.IsExceededBy(totalCost)) throw new OrderMaxTotalCostExceeded();
+            return totalCost;
         }
     }
 }

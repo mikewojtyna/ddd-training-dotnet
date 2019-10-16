@@ -56,6 +56,28 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
             Check.That(order.CalculateTotalCost()).IsEqualTo(OfUSD(30m));
         }
 
+        [Test]
+        public void Given_OrderWithSingleItemOfValueUSD10AndMaxTotalCostOf20_When_AddNewItemOfValue11USD_Then_Fail()
+        {
+            //Given
+            Order order = OrderWithSingleProductOfPriceAndMaxTotalCost(OfUSD(10m), OfUSD(20m));
+            Product newProduct = ProductOfValue(OfUSD(11m));
+            //When
+            Check.ThatCode(() => order.AddNewProduct(newProduct))
+                // then
+                .Throws<OrderMaxTotalCostExceeded>();
+            //Then
+            // nothing changed
+            Check.That(order.CalculateTotalCost()).IsEqualTo(OfUSD(10m));
+        }
+
+        private Order OrderWithSingleProductOfPriceAndMaxTotalCost(Money productPrice           , Money limit)
+        {
+            Order order = new Order(OrderLimit.LimitedBy(limit));
+            order.AddNewProduct(ProductOfValue(productPrice));
+            return order;
+        }
+
         private Product ProductOfValue(Money money)
         {
             return new Product(money);

@@ -48,8 +48,19 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
         {
             if (money.IsZero())
                 return this;
-            if (money.Unit != this.Unit) throw new InvalidOperationException("Not the same currency.");
+            CheckIfUnitsMatch(money);
             return Money.Of(money.Amount + Amount, Unit);
+        }
+
+        public bool IsGreaterThan(Money money)
+        {
+            CheckIfUnitsMatch(money);
+            return this.Amount > money.Amount;
+        }
+
+        private void CheckIfUnitsMatch(Money money)
+        {
+            if (money.Unit != this.Unit) throw new InvalidOperationException("Not the same currency.");
         }
     }
 
