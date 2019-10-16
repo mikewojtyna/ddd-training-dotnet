@@ -14,9 +14,13 @@ namespace BuildMySoftware.DDDTraining.Bike
         {
             BikeBroken = bikeBroken;
         }
-        public bool IsSuccess { get; }
-        public BikeRent BikeRent { get; set; }
-        public BikeBroken BikeBroken { get; set; }
-        public TriedToRentInvalidBike TriedToRentInvalidBike { get; set; }
+        public BikeRentResult(RentLimitExceeded rentLimitExceeded)
+        {
+            RentLimitExceeded = rentLimitExceeded;
+        }
+        public BikeRent BikeRent { get; private set; }
+        public BikeBroken BikeBroken { get; private set; }
+        public TriedToRentInvalidBike TriedToRentInvalidBike { get; private set; }
+        public RentLimitExceeded RentLimitExceeded { get; private set; }
     }
 }

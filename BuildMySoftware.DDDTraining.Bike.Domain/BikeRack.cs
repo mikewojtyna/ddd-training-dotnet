@@ -10,19 +10,31 @@ namespace BuildMySoftware.DDDTraining.Bike
 
         public BikeRentResult RentBikeBy(Client client, BikeId bikeId)
         {
-            var bikes = AvailableBikes.FirstOrDefault(x => x.Id.Equals(bikeId));
-            if (bikes == null)
+            var matchingBike = AvailableBikes.FirstOrDefault(x => x.Id.Equals(bikeId));
+            if (matchingBike == null)
             {
                 return new BikeRentResult(new TriedToRentInvalidBike());
             }
             if (AvailableBikes.Count == 0)
                 return new BikeRentResult((BikeRent)null);
-            if (bikes.IsBroken)
+
+            if (matchingBike.IsBroken)
             {
                 return new BikeRentResult(new BikeBroken());
             }
+            if (client.ActivesBikes >= 2)
+            {
+                return new BikeRentResult(new RentLimitExceeded());
+            }
             if (client.Funds().IsGreaterThanOrEqual(10.00m))
+            {
+                AvailableBikes.Remove(matchingBike);
                 return new BikeRentResult(new BikeRent());
+            }
+
+
+
+
 
             return new BikeRentResult((BikeRent)null);
         }
