@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using BuildMySoftware.DDDTraining.SharedKernel;
 
@@ -8,8 +9,8 @@ namespace BuildMySoftware.DDDTraining.Order
     {
         private List<OrderItem> Items { get; set; } = new List<OrderItem>();
         private Money TotalOrderValue { get; set; } = Money.Zero();
-
         private OrderLimit OrderLimit { get; set; }
+        public OrderId Id { get; }
 
         public Money CalculateTotalCost()
         {
@@ -18,6 +19,7 @@ namespace BuildMySoftware.DDDTraining.Order
 
         public Order()
         {
+            Id = GenerateId();
             OrderLimit = OrderLimit.Unlimited();
         }
 
@@ -32,6 +34,7 @@ namespace BuildMySoftware.DDDTraining.Order
 
         public Order(OrderLimit limit)
         {
+            Id = GenerateId();
             OrderLimit = limit;
         }
 
@@ -41,6 +44,11 @@ namespace BuildMySoftware.DDDTraining.Order
             if (item == null) Items.Add(new OrderItem(1, newProduct));
             else item.IncreaseQuantity();
             TotalOrderValue = Recalculate();
+        }
+
+        private OrderId GenerateId()
+        {
+            return new OrderId(Guid.NewGuid());
         }
 
         private Money Recalculate()

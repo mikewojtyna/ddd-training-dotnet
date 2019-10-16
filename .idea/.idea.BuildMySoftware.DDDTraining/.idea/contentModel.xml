@@ -102,12 +102,41 @@
           </e>
         </e>
       </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Application" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Application.csproj" t="IncludeRecursive" />
+        <e p="OrderPlacedEventLogger.cs" t="Include" />
+        <e p="OrderService.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Application.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Application.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Application.Tests.csproj" t="IncludeRecursive" />
+        <e p="OrderServiceIntegrationTests.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Application.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
+        <e p="IOrderRepository.cs" t="Include" />
         <e p="Order.cs" t="Include" />
+        <e p="OrderFactory.cs" t="Include" />
+        <e p="OrderId.cs" t="Include" />
         <e p="OrderItem.cs" t="Include" />
         <e p="OrderLimit.cs" t="Include" />
         <e p="OrderMaxTotalCostExceeded.cs" t="Include" />
+        <e p="OrderPlaced.cs" t="Include" />
         <e p="Product.cs" t="Include" />
         <e p="ProductId.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -131,8 +160,24 @@
           </e>
         </e>
       </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Infrastructure" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="DependencyContainer.cs" t="Include" />
+        <e p="InMemoryRepository.cs" t="Include" />
+        <e p="RelayOnlyEventPublisher.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="BuildMySoftware.DDDTraining.SharedKernel" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.SharedKernel.csproj" t="IncludeRecursive" />
+        <e p="IEventConsumer.cs" t="Include" />
+        <e p="IEventPublisher.cs" t="Include" />
         <e p="Money.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">

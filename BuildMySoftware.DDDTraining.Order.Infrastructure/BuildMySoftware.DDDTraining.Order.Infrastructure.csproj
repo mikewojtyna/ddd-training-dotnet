@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>BuildMySoftware.DDDTraining.Order</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BuildMySoftware.DDDTraining.Order.Application\BuildMySoftware.DDDTraining.Order.Application.csproj" />
+      <ProjectReference Include="..\BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Castle.Windsor" Version="5.0.1" />
+    </ItemGroup>
+
+</Project>
