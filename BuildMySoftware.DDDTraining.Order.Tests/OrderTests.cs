@@ -16,7 +16,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
             //When
             Money totalCost = order.CalculateTotalCost();
             //Then
-            Check.That(totalCost).IsEqualTo(ZeroDollars());
+            Check.That(totalCost.IsZero()).IsTrue();
         }
 
         [Test]
@@ -30,6 +30,37 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
             Check.That(totalCost).IsEqualTo(OfUSD(10m));
         }
 
+        [Test]
+        public void Given_OrderWithSingleItemOfValueUSD10_When_AddNewItem_Then_TotalCostIsUpdated()
+        {
+            //Given
+            Order order = OrderWithSingleProductOfPrice(OfUSD(10m));
+            Product newProduct = ProductOfValue(OfUSD(68)); 
+            //When
+            order.AddNewProduct(newProduct);
+            //Then
+            Check.That(order.CalculateTotalCost()).IsEqualTo(OfUSD(78m));
+        }
+
+        [Test]
+        public void Given_EmptyOrder_When_AddTwoNewItems_Then_TotalCostIsSumOfThoseItems()
+        {
+            //Given
+            Order order = EmptyOrder();
+            Product newProduct1 = ProductOfValue(OfUSD(10));
+            Product newProduct2 = ProductOfValue(OfUSD(20));
+            //When
+            order.AddNewProduct(newProduct1);
+            order.AddNewProduct(newProduct2);
+            //Then
+            Check.That(order.CalculateTotalCost()).IsEqualTo(OfUSD(30m));
+        }
+
+        private Product ProductOfValue(Money money)
+        {
+            return new Product(money);
+        }
+
         private Order OrderWithSingleProductOfPrice(Money money)
         {
             return Order.WithProducts(new Product(money));
@@ -37,7 +68,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 
         private Money OfUSD(decimal amount)
         {
-            return Money.Of(10, CurrencyUnit.USD);
+            return Money.Of(amount, CurrencyUnit.USD);
         }
 
         private object OrderWithSingleItem()
