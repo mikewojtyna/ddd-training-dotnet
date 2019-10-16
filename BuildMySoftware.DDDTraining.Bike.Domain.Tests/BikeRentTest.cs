@@ -1,3 +1,4 @@
+using BuildMySoftware.DDDTraining.SharedKernel;
 using NFluent;
 using NUnit.Framework;
 
@@ -172,7 +173,7 @@ namespace BuildMySoftware.DDDTraining.Bike.Tests
 
         private Money PlnOf(decimal d)
         {
-            return new Money(d, "PLN");
+            return Money.Of(d, CurrencyUnit.PLN);
         }
 
         private BikeRack BikeRackWithAtLeastSingleBike()

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace BuildMySoftware.DDDTraining.Order
+namespace BuildMySoftware.DDDTraining.SharedKernel
 {
     public class Money
     {
@@ -17,7 +17,7 @@ namespace BuildMySoftware.DDDTraining.Order
             return $"{Unit.ToString()} {Amount}";
         }
 
-        internal Money MultipiedBy(int quantity)
+        public Money MultipiedBy(int quantity)
         {
             return Money.Of(Amount * quantity, Unit);            
         }
@@ -62,11 +62,17 @@ namespace BuildMySoftware.DDDTraining.Order
         {
             if (money.Unit != this.Unit) throw new InvalidOperationException("Not the same currency.");
         }
+
+        public bool IsGreaterThanOrEqual(decimal amount)
+        {
+            return this.Amount >= amount;
+        }
     }
 
     public enum CurrencyUnit
     {
         USD,
-        ANY
+        ANY,
+        PLN
     }
 }

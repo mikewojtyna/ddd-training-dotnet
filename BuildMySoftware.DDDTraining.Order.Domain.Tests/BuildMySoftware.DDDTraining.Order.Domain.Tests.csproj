@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj" />
+    <ProjectReference Include="..\BuildMySoftware.DDDTraining.SharedKernel\BuildMySoftware.DDDTraining.SharedKernel.csproj" />
   </ItemGroup>
 
 </Project>

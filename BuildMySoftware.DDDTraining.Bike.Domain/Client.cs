@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using BuildMySoftware.DDDTraining.SharedKernel;
 
 namespace BuildMySoftware.DDDTraining.Bike
 {

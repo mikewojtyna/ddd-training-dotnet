@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain", "BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj", "{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.SharedKernel", "BuildMySoftware.DDDTraining.SharedKernel\BuildMySoftware.DDDTraining.SharedKernel.csproj", "{542FBAD5-9852-42AA-83EA-29491CCF1AD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{542FBAD5-9852-42AA-83EA-29491CCF1AD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542FBAD5-9852-42AA-83EA-29491CCF1AD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542FBAD5-9852-42AA-83EA-29491CCF1AD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542FBAD5-9852-42AA-83EA-29491CCF1AD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

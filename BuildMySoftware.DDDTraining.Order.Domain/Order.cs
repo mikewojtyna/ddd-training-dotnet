@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using BuildMySoftware.DDDTraining.SharedKernel;
 
 namespace BuildMySoftware.DDDTraining.Order
 {
     public class Order
     {
-
         private List<OrderItem> Items { get; set; } = new List<OrderItem>();
         private Money TotalOrderValue { get; set; } = Money.Zero();
 
@@ -45,7 +45,7 @@ namespace BuildMySoftware.DDDTraining.Order
 
         private Money Recalculate()
         {
-            var totalCost =  Items.Select(x => x.Cost()).Aggregate((x, y) => x.Add(y));
+            var totalCost = Items.Select(x => x.Cost()).Aggregate((x, y) => x.Add(y));
             if (OrderLimit.IsExceededBy(totalCost)) throw new OrderMaxTotalCostExceeded();
             return totalCost;
         }

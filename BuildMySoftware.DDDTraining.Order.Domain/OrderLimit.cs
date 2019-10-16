@@ -1,4 +1,6 @@
-﻿namespace BuildMySoftware.DDDTraining.Order
+﻿using BuildMySoftware.DDDTraining.SharedKernel;
+
+namespace BuildMySoftware.DDDTraining.Order
 {
     public class OrderLimit
     {

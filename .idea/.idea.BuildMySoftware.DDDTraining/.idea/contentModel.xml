@@ -26,7 +26,6 @@
           <e p="description.txt" t="Include" />
           <e p="events.txt" t="Include" />
         </e>
-        <e p="Money.cs" t="Include" />
         <e p="RentLimitExceeded.cs" t="Include" />
         <e p="TriedToRentInvalidBike.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
@@ -105,7 +104,6 @@
       </e>
       <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
-        <e p="Money.cs" t="Include" />
         <e p="Order.cs" t="Include" />
         <e p="OrderItem.cs" t="Include" />
         <e p="OrderLimit.cs" t="Include" />
@@ -129,6 +127,18 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="BuildMySoftware.DDDTraining.Order.Domain.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.SharedKernel" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.SharedKernel.csproj" t="IncludeRecursive" />
+        <e p="Money.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.SharedKernel.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

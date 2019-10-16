@@ -5,4 +5,8 @@
         <RootNamespace>BuildMySoftware.DDDTraining.Order</RootNamespace>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\BuildMySoftware.DDDTraining.SharedKernel\BuildMySoftware.DDDTraining.SharedKernel.csproj" />
+    </ItemGroup>
+
 </Project>
