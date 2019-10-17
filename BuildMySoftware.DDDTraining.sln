@@ -13,17 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.CertIT.Domain.Tests", "BuildMySoftware.DDDTraining.CertIT.Domain.Tests\BuildMySoftware.DDDTraining.CertIT.Domain.Tests.csproj", "{2D3426F9-0A5D-4E15-AE8F-72A815C9981A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain.Tests", "BuildMySoftware.DDDTraining.Order.Domain.Tests\BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj", "{911E60F1-F764-4900-B260-3B495ABEF085}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Order.Domain.Tests", "BuildMySoftware.DDDTraining.Order.Domain.Tests\BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj", "{911E60F1-F764-4900-B260-3B495ABEF085}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain", "BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj", "{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Order.Domain", "BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj", "{05EA1728-FF44-42DD-8E4F-0D8D632BEA5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.SharedKernel", "BuildMySoftware.DDDTraining.SharedKernel\BuildMySoftware.DDDTraining.SharedKernel.csproj", "{542FBAD5-9852-42AA-83EA-29491CCF1AD9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.SharedKernel", "BuildMySoftware.DDDTraining.SharedKernel\BuildMySoftware.DDDTraining.SharedKernel.csproj", "{542FBAD5-9852-42AA-83EA-29491CCF1AD9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Infrastructure", "BuildMySoftware.DDDTraining.Order.Infrastructure\BuildMySoftware.DDDTraining.Order.Infrastructure.csproj", "{DEE9BEF5-F4DA-42D3-9773-CC5C3859271E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Order.Infrastructure", "BuildMySoftware.DDDTraining.Order.Infrastructure\BuildMySoftware.DDDTraining.Order.Infrastructure.csproj", "{DEE9BEF5-F4DA-42D3-9773-CC5C3859271E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Application", "BuildMySoftware.DDDTraining.Order.Application\BuildMySoftware.DDDTraining.Order.Application.csproj", "{1E8EB4BF-2104-4365-8EC3-C3C0FE885E67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Order.Application", "BuildMySoftware.DDDTraining.Order.Application\BuildMySoftware.DDDTraining.Order.Application.csproj", "{1E8EB4BF-2104-4365-8EC3-C3C0FE885E67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Application.Tests", "BuildMySoftware.DDDTraining.Order.Application.Tests\BuildMySoftware.DDDTraining.Order.Application.Tests.csproj", "{002B4ECF-D899-4C60-BDE2-6A9A35585647}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuildMySoftware.DDDTraining.Order.Application.Tests", "BuildMySoftware.DDDTraining.Order.Application.Tests\BuildMySoftware.DDDTraining.Order.Application.Tests.csproj", "{002B4ECF-D899-4C60-BDE2-6A9A35585647}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Invoicing.Domain", "BuildMySoftware.DDDTraining.Invoicing.Domain\BuildMySoftware.DDDTraining.Invoicing.Domain.csproj", "{A8DC2EB9-D6CB-40B3-BDD1-17E34DBB64C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Invoicing.Domain.Tests", "BuildMySoftware.DDDTraining.Invoicing.Domain.Tests\BuildMySoftware.DDDTraining.Invoicing.Domain.Tests.csproj", "{F4E1B965-4BF3-4E98-ADD8-6EAEA50B07C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +79,14 @@ Global
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DC2EB9-D6CB-40B3-BDD1-17E34DBB64C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DC2EB9-D6CB-40B3-BDD1-17E34DBB64C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DC2EB9-D6CB-40B3-BDD1-17E34DBB64C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DC2EB9-D6CB-40B3-BDD1-17E34DBB64C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E1B965-4BF3-4E98-ADD8-6EAEA50B07C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E1B965-4BF3-4E98-ADD8-6EAEA50B07C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E1B965-4BF3-4E98-ADD8-6EAEA50B07C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E1B965-4BF3-4E98-ADD8-6EAEA50B07C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
