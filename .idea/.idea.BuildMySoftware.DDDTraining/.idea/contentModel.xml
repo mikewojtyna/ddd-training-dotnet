@@ -138,6 +138,37 @@
           </e>
         </e>
       </e>
+      <e p="BuildMySoftware.DDDTraining.Invoicing.Domain" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Invoicing.Domain.csproj" t="IncludeRecursive" />
+        <e p="IOrderRepository.cs" t="Include" />
+        <e p="ISellerContext.cs" t="Include" />
+        <e p="Invoice.cs" t="Include" />
+        <e p="InvoicingService.cs" t="Include" />
+        <e p="Order.cs" t="Include" />
+        <e p="OrderEventPlacedConsumer.cs" t="Include" />
+        <e p="Product.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Invoicing.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Invoicing.Domain.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Invoicing.Domain.Tests.csproj" t="IncludeRecursive" />
+        <e p="SellerContext.cs" t="Include" />
+        <e p="UnitTest1.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Invoicing.Domain.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="BuildMySoftware.DDDTraining.Order.Application" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Application.csproj" t="IncludeRecursive" />
         <e p="OrderPlacedEventLogger.cs" t="Include" />
