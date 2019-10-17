@@ -11,17 +11,7 @@ namespace BuildMySoftware.DDDTraining.Order
         private Money TotalOrderValue { get; set; } = Money.Zero();
         private OrderLimit OrderLimit { get; set; }
         public OrderId Id { get; }
-
-        public Money CalculateTotalCost()
-        {
-            return TotalOrderValue;
-        }
-
-        public Order()
-        {
-            Id = GenerateId();
-            OrderLimit = OrderLimit.Unlimited();
-        }
+        private readonly DiscountPolicy _discountPolicy;
 
         public static Order WithProducts(params Product[] products)
         {
@@ -32,10 +22,23 @@ namespace BuildMySoftware.DDDTraining.Order
             return order;
         }
 
+        public Order()
+        {
+            _discountPolicy = DefaultPolicy();
+            Id = GenerateId();
+            OrderLimit = OrderLimit.Unlimited();
+        }
+
         public Order(OrderLimit limit)
         {
+            _discountPolicy = DefaultPolicy();
             Id = GenerateId();
             OrderLimit = limit;
+        }
+
+        public Money CalculateTotalCost()
+        {
+            return TotalOrderValue;
         }
 
         public void AddNewProduct(Product newProduct)
@@ -46,6 +49,11 @@ namespace BuildMySoftware.DDDTraining.Order
             TotalOrderValue = Recalculate();
         }
 
+        private DiscountPolicy DefaultPolicy()
+        {
+            return o => 0;
+        }
+
         private OrderId GenerateId()
         {
             return new OrderId(Guid.NewGuid());
@@ -54,6 +62,8 @@ namespace BuildMySoftware.DDDTraining.Order
         private Money Recalculate()
         {
             var totalCost = Items.Select(x => x.Cost()).Aggregate((x, y) => x.Add(y));
+            var discount = _discountPolicy(this);
+            totalCost = totalCost.MultiplyBy(1 - discount);
             if (OrderLimit.IsExceededBy(totalCost)) throw new OrderMaxTotalCostExceeded();
             return totalCost;
         }

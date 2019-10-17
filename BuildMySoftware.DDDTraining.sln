@@ -25,6 +25,16 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Application.Tests", "BuildMySoftware.DDDTraining.Order.Application.Tests\BuildMySoftware.DDDTraining.Order.Application.Tests.csproj", "{002B4ECF-D899-4C60-BDE2-6A9A35585647}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Package.Domain", "BuildMySoftware.DDDTraining.Package.Domain\BuildMySoftware.DDDTraining.Package.Domain.csproj", "{2BE3BFED-3BC4-47B0-A27C-5F5629C8DF04}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.PrimaryPorts", "BuildMySoftware.DDDTraining.Bike.PrimaryPorts\BuildMySoftware.DDDTraining.Bike.PrimaryPorts.csproj", "{B3FBCF3E-461E-459E-B587-2215305FE898}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.PrimaryAdapters", "BuildMySoftware.DDDTraining.Bike.PrimaryAdapters\BuildMySoftware.DDDTraining.Bike.PrimaryAdapters.csproj", "{3DA1EDF2-7291-4611-AAAF-DFE7B0C2FC2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.SecondaryPorts", "BuildMySoftware.DDDTraining.Bike.SecondaryPorts\BuildMySoftware.DDDTraining.Bike.SecondaryPorts.csproj", "{E656B80A-C2D3-4CA7-AB09-9FFFD206E766}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Package.Domain.Tests", "BuildMySoftware.DDDTraining.Package.Domain.Tests\BuildMySoftware.DDDTraining.Package.Domain.Tests.csproj", "{272177A0-E976-4173-BD48-EECC57E74406}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +85,26 @@ Global
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{002B4ECF-D899-4C60-BDE2-6A9A35585647}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BE3BFED-3BC4-47B0-A27C-5F5629C8DF04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BE3BFED-3BC4-47B0-A27C-5F5629C8DF04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BE3BFED-3BC4-47B0-A27C-5F5629C8DF04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BE3BFED-3BC4-47B0-A27C-5F5629C8DF04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3FBCF3E-461E-459E-B587-2215305FE898}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3FBCF3E-461E-459E-B587-2215305FE898}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3FBCF3E-461E-459E-B587-2215305FE898}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3FBCF3E-461E-459E-B587-2215305FE898}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DA1EDF2-7291-4611-AAAF-DFE7B0C2FC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DA1EDF2-7291-4611-AAAF-DFE7B0C2FC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DA1EDF2-7291-4611-AAAF-DFE7B0C2FC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DA1EDF2-7291-4611-AAAF-DFE7B0C2FC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E656B80A-C2D3-4CA7-AB09-9FFFD206E766}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E656B80A-C2D3-4CA7-AB09-9FFFD206E766}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E656B80A-C2D3-4CA7-AB09-9FFFD206E766}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E656B80A-C2D3-4CA7-AB09-9FFFD206E766}.Release|Any CPU.Build.0 = Release|Any CPU
+		{272177A0-E976-4173-BD48-EECC57E74406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{272177A0-E976-4173-BD48-EECC57E74406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{272177A0-E976-4173-BD48-EECC57E74406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{272177A0-E976-4173-BD48-EECC57E74406}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

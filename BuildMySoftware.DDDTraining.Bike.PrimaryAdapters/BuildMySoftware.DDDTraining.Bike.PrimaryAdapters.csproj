@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.0</TargetFramework>
+        <RootNamespace>BuildMySoftware.DDDTraining.Bike</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BuildMySoftware.DDDTraining.Bike.PrimaryPorts\BuildMySoftware.DDDTraining.Bike.PrimaryPorts.csproj" />
+    </ItemGroup>
+
+</Project>

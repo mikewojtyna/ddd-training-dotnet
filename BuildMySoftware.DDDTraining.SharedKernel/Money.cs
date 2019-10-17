@@ -17,19 +17,19 @@ namespace BuildMySoftware.DDDTraining.SharedKernel
             return $"{Unit.ToString()} {Amount}";
         }
 
-        public Money MultipiedBy(int quantity)
+        public Money MultiplyBy(int quantity)
         {
-            return Money.Of(Amount * quantity, Unit);            
+            return Of(Amount * quantity, Unit);
         }
 
         public static Money Of(decimal amount, CurrencyUnit unit)
         {
-            return new Money() { Amount = amount, Unit = unit };
+            return new Money() {Amount = amount, Unit = unit};
         }
 
         public static Money Zero()
         {
-            return new Money() { Amount = 0m, Unit = CurrencyUnit.ANY };
+            return new Money() {Amount = 0m, Unit = CurrencyUnit.ANY};
         }
 
         public override bool Equals(object obj)
@@ -49,7 +49,7 @@ namespace BuildMySoftware.DDDTraining.SharedKernel
             if (money.IsZero())
                 return this;
             CheckIfUnitsMatch(money);
-            return Money.Of(money.Amount + Amount, Unit);
+            return Of(money.Amount + Amount, Unit);
         }
 
         public bool IsGreaterThan(Money money)
@@ -66,6 +66,11 @@ namespace BuildMySoftware.DDDTraining.SharedKernel
         public bool IsGreaterThanOrEqual(decimal amount)
         {
             return this.Amount >= amount;
+        }
+
+        public Money MultiplyBy(double quantity)
+        {
+            return Of(Amount * (decimal) quantity, Unit);
         }
     }
 

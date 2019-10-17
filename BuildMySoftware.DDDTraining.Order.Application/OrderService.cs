@@ -34,8 +34,8 @@ namespace BuildMySoftware.DDDTraining.Order
             var order = _repository.findById(orderId);
             if (order == null) return;
             order.AddNewProduct(product);
-            // we decided not to produce any interesting events when adding product to order
             _repository.save(order);
+            // we decided not to produce any interesting events when adding product to order
         }
 
         public Order OrderById(OrderId orderId)

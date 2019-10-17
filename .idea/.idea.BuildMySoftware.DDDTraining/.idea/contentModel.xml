@@ -51,6 +51,42 @@
           </e>
         </e>
       </e>
+      <e p="BuildMySoftware.DDDTraining.Bike.PrimaryAdapters" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Bike.PrimaryAdapters.csproj" t="IncludeRecursive" />
+        <e p="RentBikeControllerPrimaryAdapter.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Bike.PrimaryAdapters.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Bike.PrimaryPorts" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Bike.PrimaryPorts.csproj" t="IncludeRecursive" />
+        <e p="RentBikePort.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Bike.PrimaryPorts.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Bike.SecondaryPorts" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Bike.SecondaryPorts.csproj" t="IncludeRecursive" />
+        <e p="IRentBikePolicy.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Bike.SecondaryPorts.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
       <e p="BuildMySoftware.DDDTraining.CertIT.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.CertIT.Domain.csproj" t="IncludeRecursive" />
         <e p="Description" t="Include">
@@ -129,6 +165,7 @@
       </e>
       <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
+        <e p="DiscountPolicy.cs" t="Include" />
         <e p="IOrderRepository.cs" t="Include" />
         <e p="Order.cs" t="Include" />
         <e p="OrderFactory.cs" t="Include" />
@@ -170,6 +207,35 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Package.Domain" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Package.Domain.csproj" t="IncludeRecursive" />
+        <e p="MessageCollector.cs" t="Include" />
+        <e p="Package.cs" t="Include" />
+        <e p="PackageState.cs" t="Include" />
+        <e p="PackageState1.cs" t="Include" />
+        <e p="PackageState2.cs" t="Include" />
+        <e p="PackageUsingStatePattern.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Package.Domain.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Package.Domain.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Package.Domain.Tests.csproj" t="IncludeRecursive" />
+        <e p="PackageTests.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Package.Domain.Tests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

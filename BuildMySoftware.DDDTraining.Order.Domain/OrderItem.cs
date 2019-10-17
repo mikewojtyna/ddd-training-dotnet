@@ -20,7 +20,7 @@ namespace BuildMySoftware.DDDTraining.Order
 
         internal Money Cost()
         {
-            return _product.UnitPrice.MultipiedBy(_quantity);
+            return _product.UnitPrice.MultiplyBy(_quantity);
         }
     }
 }
