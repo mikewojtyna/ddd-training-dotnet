@@ -51,6 +51,7 @@
       </e>
       <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
+        <e p="IPurchaseOrderRepository.cs" t="Include" />
         <e p="MaxProductQuantityExceeded.cs" t="Include" />
         <e p="MaxTotalCost.cs" t="Include" />
         <e p="MaxTotalCostExceeded.cs" t="Include" />
@@ -76,6 +77,31 @@
           <e p="Debug" t="Include">
             <e p="netcoreapp3.0" t="Include">
               <e p="BuildMySoftware.DDDTraining.Order.Domain.Tests.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Infrastructure" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="EntityFrameworkPurchaseOrderRepository.cs" t="Include" />
+        <e p="PurchaseOrderContext.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+      </e>
+      <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.Tests" t="IncludeRecursive">
+        <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.Tests.csproj" t="IncludeRecursive" />
+        <e p="RepositoryTests.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.0" t="Include">
+              <e p="BuildMySoftware.DDDTraining.Order.Infrastructure.Tests.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
         </e>

@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain.Tests", "BuildMySoftware.DDDTraining.Order.Domain.Tests\BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj", "{06945AC4-4887-4FC3-985B-4904AD58DF6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Infrastructure", "BuildMySoftware.DDDTraining.Order.Infrastructure\BuildMySoftware.DDDTraining.Order.Infrastructure.csproj", "{D8202370-1126-43FC-8D1D-0C28A5A7243A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Infrastructure.Tests", "BuildMySoftware.DDDTraining.Order.Infrastructure.Tests\BuildMySoftware.DDDTraining.Order.Infrastructure.Tests.csproj", "{34298DCC-7D3E-4DE8-97E1-A03FF8CBA553}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8202370-1126-43FC-8D1D-0C28A5A7243A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8202370-1126-43FC-8D1D-0C28A5A7243A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8202370-1126-43FC-8D1D-0C28A5A7243A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8202370-1126-43FC-8D1D-0C28A5A7243A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34298DCC-7D3E-4DE8-97E1-A03FF8CBA553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34298DCC-7D3E-4DE8-97E1-A03FF8CBA553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34298DCC-7D3E-4DE8-97E1-A03FF8CBA553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34298DCC-7D3E-4DE8-97E1-A03FF8CBA553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

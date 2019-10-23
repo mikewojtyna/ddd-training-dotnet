@@ -2,7 +2,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 {
     public class Product
     {
-        internal string Name { get; }
+        public string Name { get; }
         public Money Price { get; }
    
         public Product(Money money, string name)

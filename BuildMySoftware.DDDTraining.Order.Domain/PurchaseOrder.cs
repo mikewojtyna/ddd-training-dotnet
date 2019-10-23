@@ -6,7 +6,7 @@ namespace BuildMySoftware.DDDTraining.Order
 {
     public class PurchaseOrder
     {
-        private PurchaseOrderId Id { get; }
+        public PurchaseOrderId Id { get; }
         private readonly List<OrderItem> _items = new List<OrderItem>();
         private MaxTotalCost MaxTotalCost { get; }
         private int MaxQuantityPerProduct { get; }
@@ -24,6 +24,22 @@ namespace BuildMySoftware.DDDTraining.Order
             this.Id = Id;
             this.MaxQuantityPerProduct = MaxQuantityPerProduct;
             MaxTotalCost = maxTotalCost;
+        }
+
+        /// <summary>
+        /// Used to rehydrate the aggregate. Generally this constructor should not be used by regular clients. This might be replaced by reflection calls.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="maxTotalCost"></param>
+        /// <param name="maxQuantityPerProduct"></param>
+        /// <param name="items"></param>
+        public PurchaseOrder(PurchaseOrderId id, MaxTotalCost maxTotalCost, int maxQuantityPerProduct,
+            List<OrderItem> items)
+        {
+            Id = id;
+            MaxTotalCost = maxTotalCost;
+            MaxQuantityPerProduct = maxQuantityPerProduct;
+            _items.AddRange(items);
         }
 
         public Money TotalCost()

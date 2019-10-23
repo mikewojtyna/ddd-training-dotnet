@@ -2,12 +2,12 @@ using BuildMySoftware.DDDTraining.Order.Tests;
 
 namespace BuildMySoftware.DDDTraining.Order
 {
-    internal class OrderItem
+    public class OrderItem
     {
         internal int Quantity { get; set; }
         private Product Product { get; }
 
-        internal OrderItem(int quantity, Product product)
+        public OrderItem(int quantity, Product product)
         {
             Quantity = quantity;
             Product = product;
