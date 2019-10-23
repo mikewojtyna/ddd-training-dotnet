@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Bike.Domain.Tests", "BuildMySoftware.DDDTraining.Bike.Domain.Tests\BuildMySoftware.DDDTraining.Bike.Domain.Tests.csproj", "{38C3614D-82CA-489F-AC04-756469024758}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain", "BuildMySoftware.DDDTraining.Order.Domain\BuildMySoftware.DDDTraining.Order.Domain.csproj", "{C2BB312B-6508-4D20-AEEB-B5FC57AC0580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuildMySoftware.DDDTraining.Order.Domain.Tests", "BuildMySoftware.DDDTraining.Order.Domain.Tests\BuildMySoftware.DDDTraining.Order.Domain.Tests.csproj", "{06945AC4-4887-4FC3-985B-4904AD58DF6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +28,13 @@ Global
 		{38C3614D-82CA-489F-AC04-756469024758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38C3614D-82CA-489F-AC04-756469024758}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38C3614D-82CA-489F-AC04-756469024758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2BB312B-6508-4D20-AEEB-B5FC57AC0580}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2BB312B-6508-4D20-AEEB-B5FC57AC0580}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2BB312B-6508-4D20-AEEB-B5FC57AC0580}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2BB312B-6508-4D20-AEEB-B5FC57AC0580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06945AC4-4887-4FC3-985B-4904AD58DF6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
