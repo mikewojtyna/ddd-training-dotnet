@@ -51,11 +51,14 @@
       </e>
       <e p="BuildMySoftware.DDDTraining.Order.Domain" t="IncludeRecursive">
         <e p="BuildMySoftware.DDDTraining.Order.Domain.csproj" t="IncludeRecursive" />
+        <e p="MaxProductQuantityExceeded.cs" t="Include" />
         <e p="MaxTotalCost.cs" t="Include" />
         <e p="MaxTotalCostExceeded.cs" t="Include" />
         <e p="Money.cs" t="Include" />
+        <e p="OrderItem.cs" t="Include" />
         <e p="Product.cs" t="Include" />
         <e p="PurchaseOrder.cs" t="Include" />
+        <e p="PurchaseOrderId.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">

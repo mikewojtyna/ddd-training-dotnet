@@ -2,14 +2,9 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 {
     public class Product
     {
-        private string Name { get; }
-        private Money Price { get; }
-
-        internal Money Cost()
-        {
-            return Price;
-        }
-
+        internal string Name { get; }
+        public Money Price { get; }
+   
         public Product(Money money, string name)
         {
             Price = money;

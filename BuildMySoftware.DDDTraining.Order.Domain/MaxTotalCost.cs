@@ -7,9 +7,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 
         internal bool IsExceededBy(Money amount)
         {
-            if (IsLimited)
-                return amount.IsGreaterThan(Limit);
-            return false;
+            return IsLimited && amount.IsGreaterThan(Limit);
         }
 
         private MaxTotalCost()

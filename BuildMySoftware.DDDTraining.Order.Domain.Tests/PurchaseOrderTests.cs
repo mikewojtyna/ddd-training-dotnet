@@ -1,3 +1,4 @@
+using System;
 using NFluent;
 using NUnit.Framework;
 
@@ -64,15 +65,42 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
 
             // when
             Check.ThatCode(() => purchaseOrder.AddProduct(product))
-                
+
                 // then
                 .Throws<MaxTotalCostExceeded>();
+        }
+
+        [Test]
+        public void Given_PurchaseOrder_ThenCannotAddMoreThan3TheSameProducts()
+        {
+            // given
+            PurchaseOrder purchaseOrder = EmptyOrder();
+            Product tea = ProductWithName("tea");
+
+            // when
+            purchaseOrder.AddProduct(tea);
+            purchaseOrder.AddProduct(tea);
+            purchaseOrder.AddProduct(tea);
+            Check.ThatCode(() => purchaseOrder.AddProduct(tea))
+
+                // then
+                .Throws<MaxProductQuantityExceeded>();
+        }
+
+        private Product ProductWithName(string name)
+        {
+            return new Product(Zero(), name);
         }
 
         private PurchaseOrder EmptyOrderWithMaxTotalCostOf(Money amount)
         {
             MaxTotalCost maxTotalCost = new MaxTotalCost(amount);
-            return new PurchaseOrder(maxTotalCost);
+            return new PurchaseOrder(GenerateId(), maxTotalCost);
+        }
+
+        private PurchaseOrderId GenerateId()
+        {
+            return new PurchaseOrderId(Guid.NewGuid());
         }
 
         private Product ProductWithPriceAndName(Money amount, string product)
@@ -103,7 +131,7 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
         private PurchaseOrder EmptyOrder()
         {
             MaxTotalCost unlimitedTotalCost = MaxTotalCost.Unlimited();
-            return new PurchaseOrder(unlimitedTotalCost);
+            return new PurchaseOrder(GenerateId(), unlimitedTotalCost);
         }
     }
 }

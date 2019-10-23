@@ -50,5 +50,10 @@ namespace BuildMySoftware.DDDTraining.Order.Tests
         {
             return Amount > limit.Amount;
         }
+
+        public Money MultiplyBy(in int quantity)
+        {
+            return new Money {Amount = Amount * quantity, Unit = Unit};
+        }
     }
 }
