@@ -4,6 +4,8 @@
         <TargetFramework>netcoreapp3.0</TargetFramework>
 
         <IsPackable>false</IsPackable>
+
+        <RootNamespace>BuildMySoftware.DDDTraining.Bike.Tests</RootNamespace>
     </PropertyGroup>
 
     <ItemGroup>
