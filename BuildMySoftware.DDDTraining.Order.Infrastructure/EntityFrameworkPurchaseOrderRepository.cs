@@ -17,8 +17,7 @@ namespace BuildMySoftware.DDDTraining.Order
 
         public PurchaseOrder Load(PurchaseOrderId id)
         {
-            return Rehydrate(_dbContext.PurchaseOrders.FirstOrDefault(o =>
-                o.Id.Equals(GetFieldOrPropertyValue<Guid>(id, "Value"))));
+            return Rehydrate(_dbContext.PurchaseOrders.Find(GetFieldOrPropertyValue<Guid>(id, "Value")));
         }
 
         public void Save(PurchaseOrder order)
